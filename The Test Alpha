@@ -1,0 +1,32 @@
+function C() spawn(function () while getgenv().C do game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.ToolService.RE.onClick:FireServer() game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.ArmWrestleService.RE.onClickRequest:FireServer() wait() end end) end
+function R() spawn(function () while getgenv().R do game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.RebirthService.RE.onRebirthRequest:FireServer() wait() end end) end
+function H() spawn(function () while getgenv().H do local args = {[1] = E,[2] = {}}game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.EggService.RF.purchaseEgg:InvokeServer(unpack(args)) wait() end end) end
+
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+
+local w = library:CreateWindow("The Test [Alpha] Pe")
+
+local b = w:CreateFolder("Main")
+
+b:Button("Win Minigame<3",function()
+ local Event = game:GetService("ReplicatedStorage").WonDragMinigame
+Event:FireServer() end)
+b:Button("+1 votes",function()
+ local A_1 = 1
+local Event = game:GetService("ReplicatedStorage").PlayerVotes
+Event:FireServer(A_1) end)
+b:Box("Kill players","name",function(value,focusLost) 
+local userdata_1 = game.Workspace[value] --[[ Parent is "nil" or object is destroyed ]];
+local Target = game:GetService("ReplicatedStorage").Kill;
+Target:FireServer(userdata_1);
+end)
+
+b:Label("Made by SCP.SF#2024",{TextSize = 19; TextColor = Color3.fromRGB(255,255,255); BgColor = Color3.fromRGB(38, 38, 38);})
+
+local w = library:CreateWindow("The Test Alpha Pc")
+
+local b = w:CreateFolder("PC")
+
+b:Button("The Test Alpha Pc",function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptV2PE/VTH/main/Aplha"))()
+end)
